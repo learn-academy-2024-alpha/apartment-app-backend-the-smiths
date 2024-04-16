@@ -4,13 +4,13 @@
 #
 user1 = User.where(email: "test1@example.com").first_or_create(password: "password", password_confirmation: "password")
 user2 = User.where(email: "test2@example.com").first_or_create(password: "password", password_confirmation: "password")
-user3 = User.where(email: "test2@example.com").first_or_create(password: "password", password_confirmation: "password")
-user4 = User.where(email: "test2@example.com").first_or_create(password: "password", password_confirmation: "password")
-user5 = User.where(email: "test2@example.com").first_or_create(password: "password", password_confirmation: "password")
-user6 = User.where(email: "test2@example.com").first_or_create(password: "password", password_confirmation: "password")
-user7 = User.where(email: "test2@example.com").first_or_create(password: "password", password_confirmation: "password")
-user8 = User.where(email: "test2@example.com").first_or_create(password: "password", password_confirmation: "password")
-user9 = User.where(email: "test2@example.com").first_or_create(password: "password", password_confirmation: "password")
+user3 = User.where(email: "test3@example.com").first_or_create(password: "password", password_confirmation: "password")
+user4 = User.where(email: "test4@example.com").first_or_create(password: "password", password_confirmation: "password")
+user5 = User.where(email: "test5@example.com").first_or_create(password: "password", password_confirmation: "password")
+user6 = User.where(email: "test6@example.com").first_or_create(password: "password", password_confirmation: "password")
+user7 = User.where(email: "test7@example.com").first_or_create(password: "password", password_confirmation: "password")
+user8 = User.where(email: "test8@example.com").first_or_create(password: "password", password_confirmation: "password")
+user9 = User.where(email: "test9@example.com").first_or_create(password: "password", password_confirmation: "password")
 
 user1_apartments = [
   {
