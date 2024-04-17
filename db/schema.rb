@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_10_185527) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_17_023619) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -28,6 +28,23 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_10_185527) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "smart_security_system"
+    t.boolean "rooftop_pool"
+    t.boolean "golf_course"
+    t.boolean "community_garden"
+    t.boolean "onsite_daycare"
+    t.boolean "keyless_entry"
+    t.boolean "smart_thermostat"
+    t.boolean "spa"
+    t.boolean "concierge"
+    t.boolean "ocean_view"
+    t.boolean "personal_chef"
+    t.boolean "fiber_optic"
+    t.boolean "maid_service"
+    t.boolean "pizza_ovens"
+    t.boolean "hibachi_grill"
+    t.boolean "full_kitchen"
+    t.string "name"
   end
 
   create_table "jwt_denylist", force: :cascade do |t|

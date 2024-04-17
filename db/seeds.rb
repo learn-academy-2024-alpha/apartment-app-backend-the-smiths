@@ -4,62 +4,295 @@
 #
 user1 = User.where(email: "test1@example.com").first_or_create(password: "password", password_confirmation: "password")
 user2 = User.where(email: "test2@example.com").first_or_create(password: "password", password_confirmation: "password")
+user3 = User.where(email: "test3@example.com").first_or_create(password: "password", password_confirmation: "password")
+user4 = User.where(email: "test4@example.com").first_or_create(password: "password", password_confirmation: "password")
+user5 = User.where(email: "test5@example.com").first_or_create(password: "password", password_confirmation: "password")
+user6 = User.where(email: "test6@example.com").first_or_create(password: "password", password_confirmation: "password")
+user7 = User.where(email: "test7@example.com").first_or_create(password: "password", password_confirmation: "password")
+user8 = User.where(email: "test8@example.com").first_or_create(password: "password", password_confirmation: "password")
+user9 = User.where(email: "test9@example.com").first_or_create(password: "password", password_confirmation: "password")
 
 user1_apartments = [
   {
-    street: '129 West 81st Street',
-    unit: '5A',
-    city: 'NY',
-    state: 'NY',
-    square_footage: '1000',
-    price: '2000',
+    name: 'Octopus',
+    street: '101 Paradise Road',
+    unit: '1B',
+    city: 'Malé',
+    state: 'Maldives',
+    square_footage: '1600',
+    price: '2500',
     bedrooms: 1,
     bathrooms: 1.0,
     pets: 'no pets allowed',
-    image: 'https://www.hollywoodreporter.com/wp-content/uploads/2015/06/seinfeld_apt.jpg'
+    image: 'https://www.hollywoodreporter.com/wp-content/uploads/2015/06/seinfeld_apt.jpg',
+    smart_security_system: true,
+    rooftop_pool: true,
+    golf_course: false,
+    community_garden: false,
+    keyless_entry: true,
+    onsite_daycare: false,
+    smart_thermostat: true,
+    spa: false,
+    concierge: false,
+    ocean_view: true,
+    personal_chef: false,
+    fiber_optic: false,
+    maid_service: false,
+    pizza_ovens: false,
+    hibachi_grill: false,
+    full_kitchen: true,
   },
-  {
-    street: '21 Jumpstreet',
-    unit: '6C',
-    city: 'SA',
-    state: 'TX',
-    square_footage: '2500',
-    price: '1500',
-    bedrooms: 2,
-    bathrooms: 1.5,
-    pets: 'pets allowed',
-    image: 'https://www.hollywoodreporter.com/wp-content/uploads/2015/06/seinfeld_apt.jpg'
-  },
-
 ]
 
 user2_apartments = [
   {
-    street: '528 Cash Lane',
-    unit: '7B',
-    city: 'Miami',
-    state: 'FL',
-    square_footage: 1200,
+    name: 'Sandtopia',
+    street: '102 Utopia Highway',
+    unit: '2D',
+    city: 'Hulhumalé',
+    state: 'Maldives',
+    square_footage: '1700',
+    price: '3000',
+    bedrooms: 2,
+    bathrooms: 1.5,
+    pets: 'pets allowed',
+    image: 'https://www.hollywoodreporter.com/wp-content/uploads/2015/06/seinfeld_apt.jpg',
+    smart_security_system: false,
+    rooftop_pool: false,
+    golf_course: true,
+    community_garden: false,
+    keyless_entry: true,
+    onsite_daycare: false,
+    smart_thermostat: true,
+    spa: false,
+    concierge: false,
+    ocean_view: true,
+    personal_chef: false,
+    fiber_optic: false,
+    maid_service: false,
+    pizza_ovens: true,
+    hibachi_grill: false,
+    full_kitchen: false,
+  },
+]
+
+user3_apartments = [
+  {
+    name: 'Tropicana Hideaway',
+    street: '523 Luxury Blvd',
+    unit: '9A',
+    city: 'Fuvahmulah',
+    state: 'Maldives',
+    square_footage: '2400',
     price: '5000',
     bedrooms: 3,
     bathrooms: 2.0,
-    pets: 'all pets allowed',
+    pets: 'no pets allowed',
     image: 'https://www.hollywoodreporter.com/wp-content/uploads/2015/06/seinfeld_apt.jpg',
+    smart_security_system: true,
+    rooftop_pool: false,
+    golf_course: false,
+    community_garden: true,
+    keyless_entry: false,
+    onsite_daycare: true,
+    smart_thermostat: false,
+    spa: true,
+    concierge: true,
+    ocean_view: false,
+    personal_chef: false,
+    fiber_optic: true,
+    maid_service: true,
+    pizza_ovens: false,
+    hibachi_grill: true,
+     full_kitchen: false,
   },
-  {
-    street: '187 Wrong Turn Blvd.',
-    unit: '8D',
-    city: 'Huntsville',
-    state: 'AL',
-    square_footage: 4000,
-    price: '1100',
-    bedrooms: 3,
-    bathrooms: 2.5,
-    pets: 'dogs allowed',
-    image: 'https://www.hollywoodreporter.com/wp-content/uploads/2015/06/seinfeld_apt.jpg',
-  }
 ]
-
+user4_apartments = [
+  {
+    name: 'Azure Serenity Villa',
+    street: '1017 Sunset Ln.',
+    unit: '7C',
+    city: 'Addu City',
+    state: 'Maldives',
+    square_footage: '2500',
+    price: '6000',
+    bedrooms: 2,
+    bathrooms: 1.5,
+    pets: 'pets allowed',
+    image: 'https://www.hollywoodreporter.com/wp-content/uploads/2015/06/seinfeld_apt.jpg',
+    smart_security_system: true,
+    rooftop_pool: true,
+    golf_course: false,
+    community_garden: true,
+    keyless_entry: false,
+    onsite_daycare: true,
+    smart_thermostat: true,
+    spa: true,
+    concierge: false,
+    ocean_view: false,
+    personal_chef: true,
+    fiber_optic: false,
+    maid_service: true,
+    pizza_ovens: false,
+    hibachi_grill: false,
+    full_kitchen: false,
+  },
+]
+user5_apartments = [
+  {
+    name: 'Palm Oasis Retreat',
+    street: '111 Sandy Court',
+    unit: '5L',
+    city: 'Kulhudhuffushi',
+    state: 'Maldives',
+    square_footage: '3000',
+    price: '6500',
+    bedrooms: 2,
+    bathrooms: 2.5,
+    pets: 'no pets allowed',
+    image: 'https://www.hollywoodreporter.com/wp-content/uploads/2015/06/seinfeld_apt.jpg',
+    smart_security_system: true,
+    rooftop_pool: true,
+    golf_course: true,
+    community_garden: true,
+    keyless_entry: true,
+    onsite_daycare: true,
+    smart_thermostat: true,
+    spa: true,
+    concierge: false,
+    ocean_view: false,
+    personal_chef: false,
+    fiber_optic: false,
+    maid_service: true,
+    pizza_ovens: false,
+    hibachi_grill: true,
+    full_kitchen: true,
+  },
+]
+user6_apartments = [
+  {
+    name: 'Sunset Paradise Cottage',
+    street: '211 Forrest Bridge',
+    unit: '3K',
+    city: 'Thinadhoo',
+    state: 'Maldives',
+    square_footage: '1100',
+    price: '3000',
+    bedrooms: 1,
+    bathrooms: 1.5,
+    pets: 'pets allowed',
+    image: 'https://www.hollywoodreporter.com/wp-content/uploads/2015/06/seinfeld_apt.jpg',
+    smart_security_system: true,
+    rooftop_pool: true,
+    golf_course: false,
+    community_garden: true,
+    keyless_entry: true,
+    onsite_daycare: false,
+    smart_thermostat: false,
+    spa: true,
+    concierge: false,
+    ocean_view: true,
+    personal_chef: true,
+    fiber_optic: false,
+    maid_service: true,
+    pizza_ovens: false,
+    hibachi_grill: true,
+    full_kitchen: false,
+  },
+]
+user7_apartments = [
+  {
+    name: 'Aqua Haven Beach House',
+    street: '108 Gumdrop Lane',
+    unit: '9D',
+    city: 'Dhidhdhoo',
+    state: 'Maldives',
+    square_footage: '4000',
+    price: '8000',
+    bedrooms: 3,
+    bathrooms: 3.5,
+    pets: 'pets allowed',
+    image: 'https://www.hollywoodreporter.com/wp-content/uploads/2015/06/seinfeld_apt.jpg',
+    smart_security_system: false,
+    rooftop_pool: true,
+    golf_course: true,
+    community_garden: true,
+    keyless_entry: false,
+    onsite_daycare: true,
+    smart_thermostat: true,
+    spa: true,
+    concierge: false,
+    ocean_view: false,
+    personal_chef: false,
+    fiber_optic: false,
+    maid_service: false,
+    pizza_ovens: true,
+    hibachi_grill: true,
+    full_kitchen: false,
+  },
+]
+user8_apartments = [
+  {
+    name:'Ocean Breeze Villa',
+    street: '87 Park Road',
+    unit: '2E',
+    city: 'Male',
+    state: 'Naifaru',
+    square_footage: '6000',
+    price: '9000',
+    bedrooms: 3,
+    bathrooms: 3,
+    pets: 'pets allowed',
+    image: 'https://www.hollywoodreporter.com/wp-content/uploads/2015/06/seinfeld_apt.jpg',
+    smart_security_system: true,
+    rooftop_pool: true,
+    golf_course: true,
+    community_garden: true,
+    keyless_entry: true,
+    onsite_daycare: true,
+    smart_thermostat: true,
+    spa: true,
+    concierge: true,
+    ocean_view: true,
+    personal_chef: true,
+    fiber_optic: true,
+    maid_service: true,
+    pizza_ovens: true,
+    hibachi_grill: true,
+    full_kitchen: true,
+  },
+]
+user9_apartments = [
+  {
+    name: 'Coral Retreat',
+    street: '444 Spirit Circle',
+    unit: '4C',
+    city: 'Villingili',
+    state: 'Maldives',
+    square_footage: '1500',
+    price: '2800',
+    bedrooms: 2,
+    bathrooms: 1.5,
+    pets: 'no pets allowed',
+    image: 'https://www.hollywoodreporter.com/wp-content/uploads/2015/06/seinfeld_apt.jpg',
+    smart_security_system: true,
+    rooftop_pool: true,
+    golf_course: false,
+    community_garden: false,
+    keyless_entry: true,
+    onsite_daycare: false,
+    smart_thermostat: true,
+    spa: false,
+    concierge: true,
+    ocean_view: false,
+    personal_chef: true,
+    fiber_optic: false,
+    maid_service: true,
+    pizza_ovens: true,
+    hibachi_grill: true,
+    full_kitchen: true,
+  },
+]
 user1_apartments.each do |apartment|
   user1.apartments.create(apartment)
   puts "Creating: #{apartment}"
@@ -67,6 +300,41 @@ end
 
 user2_apartments.each do |apartment|
   user2.apartments.create(apartment)
+  puts "Creating: #{apartment}"
+end
+
+user3_apartments.each do |apartment|
+  user3.apartments.create(apartment)
+  puts "Creating: #{apartment}"
+end
+
+user4_apartments.each do |apartment|
+  user4.apartments.create(apartment)
+  puts "Creating: #{apartment}"
+end
+
+user5_apartments.each do |apartment|
+  user5.apartments.create(apartment)
+  puts "Creating: #{apartment}"
+end
+
+user6_apartments.each do |apartment|
+  user6.apartments.create(apartment)
+  puts "Creating: #{apartment}"
+end
+
+user7_apartments.each do |apartment|
+  user7.apartments.create(apartment)
+  puts "Creating: #{apartment}"
+end
+
+user8_apartments.each do |apartment|
+  user8.apartments.create(apartment)
+  puts "Creating: #{apartment}"
+end
+
+user9_apartments.each do |apartment|
+  user9.apartments.create(apartment)
   puts "Creating: #{apartment}"
 end
 
