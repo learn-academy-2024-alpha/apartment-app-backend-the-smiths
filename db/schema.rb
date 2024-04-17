@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_16_223404) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_17_023619) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -44,6 +44,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_16_223404) do
     t.boolean "pizza_ovens"
     t.boolean "hibachi_grill"
     t.boolean "full_kitchen"
+    t.string "name"
   end
 
   create_table "jwt_denylist", force: :cascade do |t|
